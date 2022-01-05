@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>eBook Free Download</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"      
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/11004/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          success: function(){ 
+            // alert("Form Data Submitted :)")
+            $('#successSending').offcanvas('show');
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Pixel Facebook -->
+    <!-- New Dialogika Pixel -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '203635601826673');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=203635601826673&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- End New Dialogika Pixel -->
+
+    <!-- DEC 2021 -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- END DEC 2021 -->
+
+    <!-- Dialogika Branding -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '526614771765108');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=526614771765108&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Dialogika Branding -->
+  <!-- End Pixel Facebook -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="https://www.dialogika.co" target="__blank" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <!-- <span>FlexStart</span> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <a class="getstarted scrollto" href="#myForm">Download</a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <p data-aos="fade-up"><span class="badge rounded-pill bg-primary">GET A FREE COPY OF OUR EBOOK</span></p>
+          <h1 data-aos="fade-up" data-aos-delay="200">Ini Dia! Cara Mengatasi Nge-BLANK Ditengah Pembicaraan Tanpa Persiapan Dalam Waktu 3 Detik!</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Cukup isikan form dibawah ini, kami akan mengirimkan eBook langsung ke Email Anda.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <form action="forms/contact.php" id="myForm" method="post" class="php-email-form" style="margin-top: 20px;" data-aos-delay="700" onsubmit="SubForm()">
+              <div class="row gy-4">
+                <div class="col-md-6" data-aos-delay="800">
+                  <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6" data-aos-delay="900">
+                  <input type="email" class="form-control" name="Email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12" data-aos-delay="1000">
+                  <input type="texl" class="form-control" name="Whatsapp" placeholder="Your Whatsappp" pattern="[0-9]{10,15}" required>
+                </div>
+              </div>
+
+            <div class="text-center text-lg-start" data-aos-delay="1200">
+              <button type="submit" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Download Now!</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
+              <!-- <a href="#" role="button" type="submit" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Download Now!</span>
+                <i class="bi bi-arrow-right"></i>
+              </a> -->
+            </div>
+            
+          </form>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #212121;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="127" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Jumlah Halaman</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-bookmark-fill" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Jumlah Chapter</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="327" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Total Client</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-calendar2-week-fill" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="2020" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Start From</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Features</h2>
+          <p>Pembahasan Di Buku</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <b>Cara Bicara Lancar Tanpa Persiapan</b>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <b>Anda Harus Hapal Semua Poin-Poin Presentasi, Benar? SALAH!</b>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <b>Taktik Mengeleminasi Rasa Takut</b>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <b>Apa Yang Harus Anda Hindari Saat Memulai Presentasi</b>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <b>Say Goodbye to Nge-Blank Ditengah Pembicaraan</b>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Dialogika Class</h2>
+          <p>Public Speaking</p>
+        </header>
+
+        <div class="row gy-4" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h3 style="color: #07d5c0;">Basic Class</h3>
+              <div class="price"><sup>Day</sup>4<span> / bulan</span></div>
+              <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+              <ul>
+                <li>4x Pertemuan: 1 Bulan</li>
+                <li>90 Menit / Pertemuan</li>
+                <li>MAX 10 Peserta</li>
+                <li class="na">Garansi Mengulang</li>
+                <li class="na">eCertificate</li>
+              </ul>
+              <a href="https://wasap.at/Lzg6nw" target="__blank" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <span class="featured">Best Seller</span>
+              <h3 style="color: #65c600;">Basic Plus</h3>
+              <div class="price"><sup>Day</sup>7<span> / bulan</span></div>
+              <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+              <ul>
+                <li>7x Pertemuan: 1 Bulan</li>
+                <li>90 Menit / Pertemuan</li>
+                <li>MAX 10 Peserta</li>
+                <li>Garansi Mengulang</li>
+                <li>eCertificated</li>
+              </ul>
+              <a href="https://wasap.at/fJ7P7m" target="__blank" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box">
+              <h3 style="color: #ff901c;">Presentation</h3>
+              <div class="price"><sup>Day</sup>7<span> / bulan</span></div>
+              <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+              <ul>
+                <li>7x Pertemuan: 1 Bulan</li>
+                <li>100 Menit / Pertemuan</li>
+                <li>MAX 7 Peserta</li>
+                <li>Garansi Mengulang</li>
+                <li>eCertificated</li>
+              </ul>
+              <a href="https://wasap.at/74WRZA" target="__blank" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="box">
+              <h3 style="color: #ff0071;">Offline </h3>
+              <div class="price"><sup>Day</sup>10<span> / bulan</span></div>
+              <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+              <ul>
+                <li>10x Pertemuan: 1 Bulan</li>
+                <li>120 Menit / Pertemuan</li>
+                <li>MAX 7 Peserta</li>
+                <li>Garansi Mengulang</li>
+                <li>eCertificated</li>
+              </ul>
+              <a href="https://wasap.at/323RuX" target="__blank" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Portfolio</h2>
+          <p>Public Speaking Class</p>
+        </header>
+
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app">Online</li>
+              <li data-filter=".filter-card">Offline</li>
+              <li data-filter=".filter-web">Company</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/l4MPvjCkUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              <iframe width="100%" height="268" src="https://www.youtube.com/embed/l4MPvjCkUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.youtube.com/embed/l4MPvjCkUPw" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/d6ZIJ8Ilu3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/gVq-OyirtYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/kGPgfOno7jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/MDT6COMxKC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/P3zEkDr1zXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/Q2ZGMIM2-Wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/I6oPwmKLB2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <iframe width="100%" height="268" src="https://www.youtube.com/embed/KB3pZEDSyR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Testimonials</h2>
+          <p>What they are saying about us</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Kelasnya membuat kita banyak bertukar pikiran dengan para peserta yang ada, dan nggak cuman disitu. Kita juga dilatih secara satu persatu untuk mengembangkan topik hingga berbicara tanpa persiapan. Terima kasih banyak Dialogika
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/rianprasetyo.jpg" class="testimonial-img" alt="">
+                  <h3>Rian Hilman Prasetyo</h3>
+                  <h4>Field Education Consultant at Ruangguru</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Belajar public speaking nggak mengenal batas usia, buat kamu yang pingin belajar sekaligus prakek. Dialogika menjadi ajang yang baik untuk teman-teman berlatih public speaking mulai dasar. Terima kasih Dialogika!
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/satyanovi.jpg" class="testimonial-img" alt="">
+                  <h3>Satya Novi Hastuti</h3>
+                  <h4>Assistant Audit Manager at EY Global</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Terasa banget kak, biasanya aku sering bgt gugur di tahapan "wawancara" saat seleksi kerja tapi kemarin abis wawancara bener2 ngerasa beda dan <b>hasilnya juga baik.</b> Nervous sih masih ada tp udah tau cara mengontrolnya. Dan yg paling beda setiap bicara bisa lebih pede sama kata-kata yg aku ucapkan. Mungkin <b>terbantu banget</b> karena kelas public speaking Dialogika banyak prakteknya.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/beatrice.jpg" class="testimonial-img" alt="">
+                  <h3>Natasha Beatrice Silalahi</h3>
+                  <h4>Sales Manager</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Public Speaking yang diberikan oleh Dialogika sangat bermanfaat bagi saya saat melakukan presentasi ujian. <b>Nervous</b> yang sering saya alami <b>sudah teratasi</b> dan jadi lebih rileks. Begitu pula saat memberikan opini... berjalan lancar tanpa belibet.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/sherylna.jpg" class="testimonial-img" alt="">
+                  <h3>Sherlyna Anggraini Putri</h3>
+                  <h4>Mahasiswa</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Dari owner, mentor yang mengajar dan menemani serta mengajar bahkan sampai teman-teman yang join orangnya asyik-asyik. Pokoknya selalu di support dan diberikan feedback yang positif dan membangun. Gak ada tandingannya lah!
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/ayudia.jpg" class="testimonial-img" alt="">
+                  <h3>Ayudia Indrawati</h3>
+                  <h4>Psikolog Industri dan Organisasi</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <!-- <span>FlexStart</span> -->
+            </a>
+            <p>Wadah Pengembangan Diri dan Menggapai Mimpi | Kami percaya komunikasi adalah poin krusial menggapainya, begitu mulut terbuka dunia tahu siapa Anda. Inilah alasan kami membantu client mengatasi masalah public speaking.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> 
+                <a href="https://dialogika.co/program/basic-plus.html">Basic Plus</a></li>
+              <li><i class="bi bi-chevron-right"></i> 
+                <a href="https://dialogika.co/program/presentation-class.html">Presentation</a></li>
+              <li><i class="bi bi-chevron-right"></i> 
+                <a href="https://dialogika.co/program/pro-class.html">Pro Class</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://circle.dialogika.co">Circle</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://talent.dialogika.co">Internship</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://blog.dialogika.co">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Jatempanol, Sleman <br>
+              Yogyakarta, DIY 55164<br>
+              Indonesia <br><br>
+              <strong>Phone:</strong> +62 821 37 60 669<br>
+              <strong>Email:</strong> admin@dialogika.co<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- ======= Offcanvas ======= -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="successSending" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">eBook Notification</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <small class="text-muted"><strong>Success! eBook akan Segera Dikirim</strong></small>
+        <h1><strong>Silahkan Check Email atau Spam</strong></h1>
+        <p>eBook & eMail akan kami kirimkan di setiap Jam Kerja Kami</p>
+        <ul>
+          <li>Hari: Selasa - Sabtu</li>
+          <li>Pukul: 10:00 ~ 15:00 WIB</li>
+        </ul>
+        <p>Jika ada yang ingin ditanyakan silahkan whatsapp ke nomor kami langsung di <a href="wa.me/6282137760669">082137760669</a></p>
+      </div>
+      <button type="button" data-bs-dismiss="offcanvas" class="btn btn-secondary">Close Page</button>
+    </div>
+  </div><!-- End Offcanvas -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
