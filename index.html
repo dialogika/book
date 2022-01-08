@@ -48,7 +48,8 @@
           data:$("#myForm").serializeArray(),
           success: function(){ 
             // alert("Form Data Submitted :)")
-            $('#successSending').offcanvas('show');
+            // $('#successSending').offcanvas('show');
+            $('#successModal').modal('show');
           },
           error: function(){
             alert("There was an error :(")
@@ -688,26 +689,41 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- ======= Offcanvas ======= -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="successSending" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">eBook Notification</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div>
-        <small class="text-muted"><strong>Success! eBook akan Segera Dikirim</strong></small>
-        <h1><strong>Silahkan Check Email atau Spam</strong></h1>
-        <p>eBook & eMail akan kami kirimkan di setiap Jam Kerja Kami</p>
-        <ul>
-          <li>Hari: Selasa - Sabtu</li>
-          <li>Pukul: 10:00 ~ 15:00 WIB</li>
-        </ul>
-        <p>Jika ada yang ingin ditanyakan silahkan whatsapp ke nomor kami langsung di <a href="wa.me/6282137760669">082137760669</a></p>
+  <!-- ======= Modal ======= -->
+  <div class="modal fade" id="successModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="card text-center">
+            <div class="card-body">
+              <h3 class="card-title"><b style="color: #006a4e;">Success!</b></h3>
+              <p class="card-text">Silahkan Check Email atau Spam | eBook dikirim setiap jam kerja kami</p>
+              <div class="card border-secondary mb-3">
+                <div class="card-header">Jam Kerja</div>
+                <div class="card-body text-secondary">
+                  <ul>
+                    <li><b>Hari:</b> Selasa - Sabtu</li>
+                    <li><b>Pukul:</b> 10:00 - 15:00</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card border-success mb-3">
+                <div class="card-header"><b style="color: #009961">FREE LIVE WEBINAR</b></div>
+                <div class="card-body text-success">
+                  <h5 class="card-title">Cara Mengatasi Ngeblank Tanpa Persiapan</h5>
+                  <p class="card-text">Rabu, 19 Januari 2021 - Pukul 19:00 WIB</p>
+                  <a href="https://chat.whatsapp.com/HclXM7ufIjJ9cvrgNdtzbl" class="btn btn-primary">Join Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
-      <button type="button" data-bs-dismiss="offcanvas" class="btn btn-secondary">Close Page</button>
     </div>
-  </div><!-- End Offcanvas -->
+  </div><!-- End Modal -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
