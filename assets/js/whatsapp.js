@@ -3,7 +3,7 @@ $(document).on('click','.send_contact', function(){
 
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '6282137760669',
+        phone = '6285162992597',
         walink2 = 'Salam Hangat, Saya tertarik dengan program *public speaking* Dialogika dan saya ingin konsultasi,' 
                 + '%0A%0A' 
                 + 'Sebelumnya perkenalkan saya: ',
