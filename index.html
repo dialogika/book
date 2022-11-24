@@ -40,7 +40,8 @@
           type:"post",
           data:$("#myForm").serializeArray(),
           success: function(){ 
-            window.location.replace("https://dialogika.co/landing/from-ebook/index.html");
+            // window.location.replace("https://dialogika.co/landing/from-ebook/index.html");
+            alert("Admin Akan Menghubungi Anda :)")
           },
           error: function(){
             alert("There was an error :(")
@@ -54,7 +55,7 @@
           data:$("#subcriptions").serializeArray(),
           success: function(){
             // $('#subcription-modal').modal('show');
-            alert("Email Has Been Saved :)")
+            alert("Whatsapp Has Been Saved :)")
           },
           error: function(){
             alert("There was an error :(")
@@ -89,8 +90,8 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
-        <i class="bi bi-phone"></i> <a href="tel:+6285162992597">+62 851 62 99 25 97</a>
+        <i class="bi bi-envelope"></i> <a href="mailto:hello@dialogika.co">hello@dialogika.co</a>
+        <i class="bi bi-phone"></i> <a href="wa.me/625162992597">+62 851 6299 2597</a>
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
         <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -120,7 +121,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <span class="badge rounded-pill bg-sukses">GET A FREE COPY OF OUR EBOOK</span>
-          <h1>BRAND NEW "CARA MENGATASI RASA NGEBLANK": HASIL PENELITIAN 2 TAHUN</h1>
+          <h1>7 Cara Untuk Mendapatkan Standing Ovation Dalam 10 Menit Presentasi Meskipun Kamu Cemas</h1>
           <p>Lengkapi formulir, kami akan mengirimkan eBook langsung ke Whatsapp Anda.</p>
           <form action="forms/contact.php" id="myForm" method="post" class="php-email-form" style="margin-top: 20px;" onsubmit="SubForm()">
               <div class="row gy-4">
@@ -129,6 +130,12 @@
                 </div>
                 <div class="col-md-6">
                   <input type="tel" class="form-control" name="Whatsapp" placeholder="Your Whatsapp" required>
+                </div>
+              </div>
+              <div class="row gy-4" style="margin-top: 4px;">
+                <div class="col-md-8 form-check" style="">
+                  <input class="small-checkbox" name="Voucher" type="checkbox" value="checked" id="voucher">
+                  <label class="form-check-label align-items-center" for="voucher" >Saya Ingin Voucher Kelas Public Speaking</label>
                 </div>
               </div>
               <select class="d-none" name="Timestamp">
@@ -161,11 +168,11 @@
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <!-- <h3>Medilab</h3> -->
-            <a href="#" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="#" class="logo me-auto"><img src="assets/img/white-logo.png" alt="" class="img-fluid"></a>
             <p>
-              Unleash Your Full Potential | Menyediakan, Membantu dan Menjadi Platform Untuk Anda Menggapai Mimpi dan Membuka Potensi Diri.<br><br>
-              <strong>Phone:</strong> +62 851 62 99 25 97<br>
-              <strong>Email:</strong> admin@dialogika.co<br>
+              Kami membantu Anda mengatasi gugup, tidak percaya diri dan ngeblank saat public speaking, wawancara kerja dan presentasi bisnis.<br><br>
+              <strong>Phone:</strong> +62 851 6299 2597<br>
+              <strong>Email:</strong> hello@dialogika.co<br>
             </p>
           </div>
 
@@ -173,20 +180,15 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://talent.dialogika.co" onclick="return false;">Dialogika Intern</a>
+                <a href="https://dialogika.co/intern">Dialogika Intern</a>
               </li>
               <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://club.dialogika.co" onclick="return false;">Dialogika Club</a>
+                <a href="https://dialogika.co/blog">Dialogika Blog</a>
               </li>
               <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://blog.dialogika.co" onclick="return false;">Dialogika Blog</a>
+                <a href="https://dialogika.co/event">Dialogika Event</a>
               </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://event.dialogika.co" onclick="return false;">Dialogika Event</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://course.dialogika.co" onclick="return false;">Dialogika eCourse</a>
-              </li>
+              
             </ul>
           </div>
 
@@ -200,23 +202,20 @@
                 <a href="https://dialogika.co/program/presentation-class.html">Presentation</a>
               </li>
               <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://dialogika.co/program/pro-class.html">Pro Class</a>
+                <a href="https://dialogika.co/program/first-class.html">Offline Class</a>
               </li>
               <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://dialogika.co/program/english-class.html">English Class</a>
+                <a href="https://dialogika.co/program/kids-play.html">Kids Play</a>
               </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="https://dialogika.co/custom/private-class.html">Private Class</a>
-              </li>
+              
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Silahkan tinggalkan email dibawah ini kemudian klik tombol subscribe</p>
+            <h4>Gabung Group Whatsapp Gratis</h4>
+            <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
             <form action="javascript:void" role="form" id="subcriptions" method="post">
-              <input type="email" name="Email" placeholder="Email"><input type="submit" value="Subscribe" onclick="Subcription()">
-              <input type="text" class="form-control d-none" name="Funnel" value="Landing Page: after eBook" readonly>
+              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Join Now" onclick="Subcription()">
             </form>
           </div>
 
@@ -254,16 +253,17 @@
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h1>Tidak Ada Kata Terlambat Untuk Menggapai Mimpi</h1>
+            <h1>Admin Akan Segera Menghubungi Anda</h1>
             <div class="card border-primary mb-3" style="margin-top:20px;">
               <div class="card-body">
-                Semoga buku ini membawa Anda ke <b>perubahan yang lebih baik</b> dan meng-akselerasi mimpi Anda
+                Tim Dialogika akan menghubungi Anda untuk <b>mengirimkan ebook</b> dari pukul 10:00 WIB - 15:00 WIB.<br>
+                Anda bebas <b>berkonsultasi kesulitan di public speaking</b> dan layanan konsultasi masih <b>bersifat GRATIS</b> hingga akhir Desember
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <p class="text-center"><b>NB:</b> Buku ini GRATIS hingga akhir Januari 2022</p>
+          <p class="text-center"><b>NB:</b> Buku ini GRATIS hingga pertengahan Desember 2022</p>
         </div>
       </div>
     </div>
